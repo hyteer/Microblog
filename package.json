@@ -1,0 +1,21 @@
+{
+  "name": "Microblog",
+  "version": "1.0.0",
+  "description": "A simple microblog system",
+  "author" : "Yongtang <hyteer@gmail.com>",
+  "tags" : ["blog", "microblog"],
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "ejs": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "http://github.com/hyteer/Microblog.git"
+  },
+  "bin" : {
+    "microblog" : "./app.js"
+  }
+}
