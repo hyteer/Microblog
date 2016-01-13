@@ -1,5 +1,5 @@
 
-根据功能设计，把路由按照以下方案规划。
+<2>Main design for the site:</h2>
 /：首页
 /u/[user]：用户的主页
 /post：发表信息
