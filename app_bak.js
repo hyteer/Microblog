@@ -14,6 +14,7 @@ var ejs = require('ejs');
 var routes = require('./routes');
 var settings = require('./settings.js');
 
+
 app.use(express.static(__dirname+'/public'));
 
 // Configure
@@ -33,6 +34,7 @@ app.use(session({
 		host: settings.host,
     	port: settings.port
     	*/
+
     	url: settings.url,
 	})
 }));
@@ -40,6 +42,27 @@ app.use(session({
 //app.use(router);
 app.use(routes);
 app.use(express.static(__dirname + '/public'));
+
+
+
+// Routes
+/*
+app.get('/', routes.index);
+app.get('/u/:user', routes.user);
+app.post('/post', routes.post);
+app.get('/reg', routes.reg);
+app.post('/reg', routes.doReg);
+app.get('/login', routes.login);
+app.post('/login', routes.doLogin);
+app.get('logout', routes.logout);
+*/
+
+
+
+
+
+
+
 
 
 

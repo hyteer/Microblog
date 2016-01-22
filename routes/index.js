@@ -1,25 +1,35 @@
 // Export routes
-exports.index = function(req,res){
-	res.render('index', { title: 'Microblog'});
-	console.log('requesting home page...');
-};
-exports.user = function(req,res){
-	res.render('user');
-};
-exports.post = function(req,res){
+var router = require('router')();
 
-};
-exports.reg = function(req,res){
-	res.render('reg');
-};
-exports.doReg = function(req,res){
+	router.get('/',function(req,res){
+		res.render('index', { title: 'Home'});
+		console.log('requesting home page...');
+	});
 
-};
-exports.login = function(req,res){
+	router.get('user',function(req,res){
+		res.render('user');
+});
 
-};
-exports.doLogin = function(req,res){
+	router.get('/reg',function(req,res){
+		res.render('reg', { title: 'Sign Up'});
+});	
 
-};
-exports.logout = function(req,res){
-};
+	router.post('/reg',function(req,res){
+
+	})
+
+	router.get('/login',function(req,res){
+		res.render('login', { title: 'Sign Up'});
+});	
+
+	router.post('/login',function(req,res){
+		res.render('doLogin', { title: 'Sign In'});
+});	
+
+	router.get('/logout',function(req,res){
+		res.render('logout', { title: 'Log Out'});
+});	
+
+
+
+module.exports = router;

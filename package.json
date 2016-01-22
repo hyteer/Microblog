@@ -2,20 +2,32 @@
   "name": "Microblog",
   "version": "1.0.0",
   "description": "A simple microblog system",
-  "author" : "Yongtang <hyteer@gmail.com>",
-  "tags" : ["blog", "microblog"],
+  "author": "Yongtang <hyteer@gmail.com>",
+  "main": "app.js",
+  "tags": [
+    "blog",
+    "microblog"
+  ],
   "scripts": {
     "start": "node app"
   },
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "connect": "^3.4.0",
+    "connect-mongo": "^1.1.0",
+    "cookie-parser": "^1.4.1",
+    "ejs": "*",
     "express": "^4.13.3",
-    "ejs": "*"
+    "express-session": "^1.13.0",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.1.4",
+    "router": "^1.1.4"
   },
   "repository": {
     "type": "git",
-    "url" : "http://github.com/hyteer/Microblog.git"
+    "url": "http://github.com/hyteer/Microblog.git"
   },
-  "bin" : {
-    "microblog" : "./app.js"
+  "bin": {
+    "microblog": "./app.js"
   }
 }
